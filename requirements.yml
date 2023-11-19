@@ -1,0 +1,8 @@
+---
+roles: 
+- src: git+https://github.com/devops893/gitlab-ansible-role.git
+  scm: git
+  version: master
+  name: gitlab
+
+collections: []

@@ -1,0 +1,30 @@
+# For gitlab role
+gitlab:
+  host: gitlab.piklema.com
+  url: https://gitlab.bakai.store
+  package: gitlab-ce=14.9.5-ce.0
+  tls_certificate:
+    src: /etc/gitlab/gitlab.bakai.store.crt
+    create_link: true
+    remote_src: true
+  tls_key:
+    src: /etc/gitlab/gitlab.bakai.store.key
+    create_link: true
+    remote_src: true
+  config_part_template_paths:
+  - templates/gitlab/email_config_part.rb.j2    
+
+
+# # For gitlab-backup-agent role
+# gitlab_backup_agent:
+#   app_name: gitlab-backuper    
+#   backuper_log_project_name: hss.gitlabbackuperlog
+#   gitlab_backups_folder: /var/backups/gitlab
+#   gpg_keypairs_directory: files/gitlab-backup-agent/keys
+#   gpg_encryption_keypair_user_name: "{{ ansible_environment }}-hss-gitlab-backup-maker"
+#   gpg_decryption_keypair_user_name: "{{ ansible_environment }}-hss-gitlab-backup-restorer"
+#   bekapilka_host: bekapilka.piklema.com
+#   bekapilka_ssh_key_path: files/gitlab-backup-agent/ssh/bekapilka-4tpXECPF.pem
+#   cron:
+#     enable: True
+#     hour: "0"

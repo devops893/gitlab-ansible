@@ -1,0 +1,27 @@
+# Compiled files
+*.tfstate
+*.tfstate.backup
+*.backup
+*.tfstate.lock.info
+*.lock.hcl
+*.lock.hcl
+
+# Directories
+.terraform/
+.vagrant/
+
+# Backup files
+*.bak
+
+# Ignore Mac .DS_Store files
+.DS_Store
+
+# Ignored vscode files
+.vscode/
+
+# Sentinel runtime directory
+.sentinel
+
+# Python cache
+__pycache__
+*.pyc
