@@ -1,8 +1,7 @@
 # For gitlab role
 gitlab:
-  host: gitlab.piklema.com
+  host: gitlab.bakai.store
   url: https://gitlab.bakai.store
-  package: gitlab-ce=14.9.5-ce.0
   tls_certificate:
     src: /etc/gitlab/gitlab.bakai.store.crt
     create_link: true
