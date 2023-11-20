@@ -9,9 +9,7 @@ gitlab:
   tls_key:
     src: /etc/gitlab/gitlab.bakai.store.key
     create_link: true
-    remote_src: true
-  config_part_template_paths:
-  - templates/gitlab/email_config_part.rb.j2    
+    remote_src: true 
 
 
 # # For gitlab-backup-agent role
